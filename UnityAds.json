@@ -1,0 +1,199 @@
+[
+  {
+    "code": "UnityAds.initialize(%1$s.this, %2$s, %3$s, new IUnityAdsInitializationListener() {\n     %4$s\n});",
+    "imports": "",
+    "color": "#9C27B0",
+    "name": "init",
+    "typeName": "",
+    "palette": "63",
+    "type": "c",
+    "spec": "UnityAds initialize %m.activity Unity Game Id%s TestMode%b "
+  },
+  {
+    "code": "@Override\npublic void onInitializationComplete() {\n%1$s\n}",
+    "color": "#9C27B0",
+    "name": "onInitializationComplete",
+    "typeName": "",
+    "palette": "63",
+    "type": "c",
+    "spec": "onInitializationComplete"
+  },
+  {
+    "code": "@Override\npublic void onInitializationFailed(UnityAds.UnityAdsInitializationError error, String message) {\n%1$s\n}",
+    "color": "#9C27B0",
+    "name": "onFail",
+    "typeName": "",
+    "palette": "63",
+    "type": "c",
+    "spec": "onInitializationFailed"
+  },
+  {
+    "code": "error + message",
+    "color": "#9C27B0",
+    "name": "error",
+    "typeName": "",
+    "palette": "63",
+    "type": "s",
+    "spec": "initializeErrorMessage"
+  },
+  {
+    "code": "",
+    "color": "#9C27B0",
+    "name": "headerU",
+    "typeName": "",
+    "palette": "63",
+    "type": "h",
+    "spec": "Load Ads"
+  },
+  {
+    "code": "UnityAds.load(%1$s, new IUnityAdsLoadListener() {\n%2$s\n});",
+    "imports": "",
+    "color": "#9C27B0",
+    "name": "Load",
+    "typeName": "",
+    "palette": "63",
+    "type": "c",
+    "spec": "LoadUnityAds AdId%s "
+  },
+  {
+    "code": "@Override\npublic void onUnityAdsAdLoaded(String placementId) {\n%1$s\n}",
+    "color": "#9C27B0",
+    "name": "onLoad",
+    "typeName": "",
+    "palette": "63",
+    "type": "c",
+    "spec": "onUnityAdsAdLoaded"
+  },
+  {
+    "code": "@Override\npublic void onUnityAdsFailedToLoad(String placementId, UnityAds.UnityAdsLoadError error, String message) {\n%1$s\n}",
+    "color": "#9C27B0",
+    "name": "onFailedToLoad",
+    "typeName": "",
+    "palette": "63",
+    "type": "c",
+    "spec": "onUnityAdsFailedToLoad"
+  },
+  {
+    "code": "error + message",
+    "color": "#9C27B0",
+    "name": "errorU",
+    "typeName": "",
+    "palette": "63",
+    "type": "s",
+    "spec": "errorMessage"
+  },
+  {
+    "code": "",
+    "color": "#9C27B0",
+    "name": "show",
+    "typeName": "",
+    "palette": "63",
+    "type": "h",
+    "spec": "showAds"
+  },
+  {
+    "code": "UnityAds.show(%1$s.this, %2$s, new UnityAdsShowOptions(), new IUnityAdsShowListener() {\n%3$s\n });",
+    "imports": "",
+    "color": "#9C27B0",
+    "name": "showIntAda",
+    "typeName": "",
+    "palette": "63",
+    "type": "c",
+    "spec": "ShowUnityAdsInterstitialAd %m.activity AdId%s "
+  },
+  {
+    "code": "UnityAds.show(%1$s.this, %2$s, new IUnityAdsShowListener() {\n%3$s\n});",
+    "imports": "",
+    "color": "#9C27B0",
+    "name": "showR",
+    "typeName": "",
+    "palette": "63",
+    "type": "c",
+    "spec": "ShowUnityAdsRewardedAd %m.activity AdId%s "
+  },
+  {
+    "code": "@Override\npublic void onUnityAdsShowFailure(String placementId, UnityAds.UnityAdsShowError error, String message) {\n%1$s\n}",
+    "color": "#9C27B0",
+    "name": "failedToShow",
+    "typeName": "",
+    "palette": "63",
+    "type": "c",
+    "spec": "onUnityAdsShowFailure"
+  },
+  {
+    "code": "error + message",
+    "color": "#9C27B0",
+    "name": "erro",
+    "typeName": "",
+    "palette": "63",
+    "type": "s",
+    "spec": "errorMessage"
+  },
+  {
+    "code": "@Override\npublic void onUnityAdsShowStart(String placementId) {\n%1$s\n}",
+    "imports": "",
+    "color": "#9C27B0",
+    "name": "onShowStart",
+    "typeName": "",
+    "palette": "63",
+    "type": "c",
+    "spec": "onUnityAdsShowStart"
+  },
+  {
+    "code": "@Override\npublic void onUnityAdsShowClick(String placementId) {\n%1$s\n}",
+    "color": "#9C27B0",
+    "name": "onUnityAdsShowClick",
+    "typeName": "",
+    "palette": "63",
+    "type": "c",
+    "spec": "onUnityAdsShowClick"
+  },
+  {
+    "code": "@Override\npublic void onUnityAdsShowComplete(String placementId, UnityAds.UnityAdsShowCompletionState state) {\n%1$s\n}",
+    "imports": "",
+    "color": "#9C27B0",
+    "name": "onUnityAdComplete",
+    "typeName": "",
+    "palette": "63",
+    "type": "c",
+    "spec": "onAdComplete"
+  },
+  {
+    "code": "",
+    "color": "#9C27B0",
+    "name": "faag",
+    "typeName": "",
+    "palette": "63",
+    "type": "h",
+    "spec": "ForFragment"
+  },
+  {
+    "code": "UnityAds.initialize(getActivity(), %1$s, %2$s, new IUnityAdsInitializationListener() {\n     %3$s\n});",
+    "imports": "",
+    "color": "#9C27B0",
+    "name": "lll",
+    "typeName": "",
+    "palette": "63",
+    "type": "c",
+    "spec": "Initialise Ads in Fragment"
+  },
+  {
+    "code": "UnityAds.show(getActivity(), %1$s, new UnityAdsShowOptions(), new IUnityAdsShowListener() {\n%2$s\n });",
+    "imports": "",
+    "color": "#9C27B0",
+    "name": "bsn",
+    "typeName": "",
+    "palette": "63",
+    "type": "c",
+    "spec": "showInterstitialAdsInFragment GameId %s "
+  },
+  {
+    "code": "UnityAds.show(getActivity(), %1$s, new IUnityAdsShowListener() {\n%2$s\n});",
+    "color": "#9C27B0",
+    "name": "jsksk",
+    "typeName": "",
+    "palette": "63",
+    "type": "c",
+    "spec": "showRewardedAdsInFragment GameId%s "
+  }
+]
